@@ -17,6 +17,7 @@ module.exports = {
       },
       screens: {
         'md': '1009px',
+        's': '575px'
       },
       aspectRatio: {
         '4/3': '4 / 3',
@@ -25,7 +26,11 @@ module.exports = {
         '116' : '993px',
         'accord-l': '100%',
         'accord-s': '90%',
-        '80%': '80%'
+        '80%': '80%',
+        '969' : '969px',
+        '113': '600px',
+        '90': '336px',
+        '100%' : '100%'
       },
       height:{
         '116' : '593px',
@@ -36,5 +41,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
