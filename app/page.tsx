@@ -1,3 +1,5 @@
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
@@ -10,6 +12,8 @@ export default function Home() {
       <Profile />
       <Projects />
       <Skills />
+      <Achievements />
+      <Contact />
     </div>
   );
 }

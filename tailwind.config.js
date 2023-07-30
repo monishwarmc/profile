@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         dark : "#05477488",
-        light : "#00d9ffb2"
+        light : "#39c9e2a9"
       },
       screens: {
         'md': '1009px',
@@ -23,6 +23,9 @@ module.exports = {
       },
       width:{
         '116' : '993px',
+        'accord-l': '100%',
+        'accord-s': '90%',
+        '80%': '80%'
       },
       height:{
         '116' : '593px',

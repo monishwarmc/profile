@@ -56,7 +56,7 @@ const Profile = () => {
 
 
   return (
-    <div className="flex flex-col items-center text-zinc-800 dark:text-slate-400">
+    <div className="flex flex-col items-center text-zinc-800 dark:text-slate-400" id="">
       <br/>
         <Image src='/me.png' width={469} height={469} alt="me"
         className="w-44 h-56 sm:w-80 sm:h-96 mt-6 py-6 rounded-4xl animate-pulsee "

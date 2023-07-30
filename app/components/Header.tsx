@@ -29,24 +29,24 @@ const Header = () => {
     };
   }, [scroll]);
 
-  const toggleButtonRef = useRef<HTMLAnchorElement>(null);
+  // const toggleButtonRef = useRef<any>(null);
 
-  useEffect(() => {
-    const handleTouchStart = (e: TouchEvent) => {
-      const touchTarget = e.target as HTMLElement;
-      const toggleButtonElement = toggleButtonRef.current;
+  // useEffect(() => {
+  //   const handleTouchStart = (e: TouchEvent) => {
+  //     const touchTarget = e.target as HTMLElement;
+  //     const toggleButtonElement = toggleButtonRef.current;
 
-      if (toggleButtonElement && !toggleButtonElement.contains(touchTarget)) {
-        setToggle(false);
-      }
-    };
+  //     if (toggleButtonElement && !toggleButtonElement.contains(touchTarget)) {
+  //       setToggle(false);
+  //     }
+  //   };
 
-    window.addEventListener("touchstart", handleTouchStart);
+  //   window.addEventListener("touchstart", handleTouchStart);
 
-    return () => {
-      window.removeEventListener("touchstart", handleTouchStart);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("touchstart", handleTouchStart);
+  //   };
+  // }, []);
 
   useEffect(() => {
     let prevScrollPos = window.scrollY;
@@ -106,8 +106,19 @@ const Header = () => {
     },
   ];
 
-  const handleToggle = () => {
-    setToggle((mm) => !mm);
+  const handleTog = () =>{
+    setToggle((prev)=>(!prev));
+  }
+
+  const handleToggle = (anchor : String) => () => {
+    const id = `${anchor}`;
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   useEffect(() => {
@@ -123,10 +134,12 @@ const Header = () => {
 
   return (
     <nav ref={headerRef} className="z-10 top-0 fixed w-full  bg-sky-300  dark:bg-sky-600 sm:h-20 h-16 rounded-b-3xl transition-transform transform duration-200 ease-in-out">
-      <ul className="sm:flex hidden">
+      <ul className="sm:flex hidden"
+      >
         {navList.map((list, i) => (
-          <Link
+          <a
             href={list.url}
+            onClick={handleToggle(list.title)}
             key={i}
             className="flex flex-col items-center py-1 px-3 md:px-6 hover:shadow-2xl"
           >
@@ -141,18 +154,18 @@ const Header = () => {
               alt={list.title}
             />
             <li className="text-black dark:text-white">{list.title}</li>
-          </Link>
+          </a>
         ))}
       </ul>
 
       {!toggle ? (
-        <a className="sm:hidden" onClick={handleToggle} ref={toggleButtonRef}>
+        <a className="sm:hidden" onClick={handleTog} >
           <div className="px-3 py-4">
             <Menu className="w-6 h-6" />
           </div>
         </a>
       ) : (
-        <a className="sm:hidden" onClick={handleToggle} ref={toggleButtonRef}>
+        <a className="sm:hidden" onClick={handleTog} >
           <div className="px-3 py-4">
             <Cross className="w-6 h-6" />
           </div>
@@ -160,11 +173,11 @@ const Header = () => {
       )}
 
       {toggle ? (
-        <ul className="">
+        <ul className="" >
           {navList.map((list, i) => (
-            <Link
+            <a  
               href={list.url}
-              onClick={handleToggle}
+              onClick={handleToggle(list.title)}
               key={i}
               className="flex items-center px-1 py-1 m-3 rounded-full bg-green-300 dark:bg-green-600 w-fit "
             >
@@ -176,7 +189,7 @@ const Header = () => {
                 alt={list.title}
               />
               <li className="text-black dark:text-white">{list.title}</li>
-            </Link>
+            </a>
           ))}
         </ul>
       ) : null}
