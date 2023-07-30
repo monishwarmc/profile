@@ -11,9 +11,9 @@ const Header = () => {
       ? localStorage.getItem("darkMode") === "true"
       : false
   );
-  const [scroll, setScroll] = useState<number>(0);
+  const [scroll, setScroll] = useState(0);
   const [toggle, setToggle] = useState(false); // Moved 'toggle' state here
-  const headerRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,7 +110,7 @@ const Header = () => {
     setToggle((prev)=>(!prev));
   }
 
-  const handleToggle = (anchor : String) => () => {
+  const handleToggle = (anchor) => () => {
     const id = `${anchor}`;
     const element = document.getElementById(id);
     if (element) {
