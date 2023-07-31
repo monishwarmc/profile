@@ -155,7 +155,7 @@ const Skills = () => {
                 />
                 { skill.link && <a href={skill.link} target='_blank' className='animate-pulse hover:animate-none flex flex-col items-center'>
                 <img
-                className='rounded-2xl hover:p-3 px-1 pb-6'
+                className='rounded-2xl hover:p-3 px-1 pb-6 sm:w-116 w-96'
                 src={"." + skill.certificate}
                 />
                 </a>}
