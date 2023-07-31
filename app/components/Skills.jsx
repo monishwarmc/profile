@@ -166,7 +166,6 @@ const Skills = () => {
           }
         
         </section>
-        <br/>
     </div>
   )
 }
