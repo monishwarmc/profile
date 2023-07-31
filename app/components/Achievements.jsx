@@ -16,7 +16,7 @@ const Achievements = () => {
             align="right"
             backgroundColor="#39c9e2a9"
             customImage={{
-              url: '/linkBinTransparent.png'
+              url: './linkBinTransparent.png'
             }}
             height="300px"
             padding="60px"

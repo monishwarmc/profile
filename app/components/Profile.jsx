@@ -1,7 +1,6 @@
 "use client"
 
-import Image from "next/image";
-import {TabList, Tab, Button} from '@web3uikit/core';
+import {TabList, Tab} from '@web3uikit/core';
 
 const Profile = () => {
 
@@ -58,7 +57,7 @@ const Profile = () => {
   return (
     <div className="flex flex-col items-center text-zinc-800 dark:text-slate-400" id="">
       <br/>
-        <Image src='/me.png' width={469} height={469} alt="me"
+        <img src='./me.png' width={469} height={469} alt="me"
         className="w-44 h-56 sm:w-80 sm:h-96 mt-6 py-6 rounded-4xl animate-pulsee "
         />
         <h1
@@ -71,7 +70,7 @@ const Profile = () => {
         <h2
         className="sm:text-5xl text-2xl font-bold sm:py-6 py-3 flex"
         >Student @ <a href="https://www.skcet.ac.in/" target="_blank" className="sm:hover:text-6xl sm:text-5xl hover:text-3xl text-2xl hover:no-underline underline flex sm:pl-3 pl-1 animate-pulse">
-            <Image alt="skcet" src='/skcet.jpeg' width={43} height={39} className="rounded-full mx-1 my-1 w-9 h-9 sm:w-11 sm:h-11"/>
+            <img alt="skcet" src='./skcet.jpeg' width={43} height={39} className="rounded-full mx-1 my-1 w-9 h-9 sm:w-11 sm:h-11"/>
             SKCET</a></h2>
         <h3
         className="sm:text-4xl text-xl sm:py-3 py-1"
@@ -97,10 +96,10 @@ const Profile = () => {
             socials.map((social, i) => (
               <div className="animate-pulse hover:animate-bounce hover:p-3" key={i}>
                 <a href={social.url} target="_blank" className="sm:flex hidden rounded-3xl w-16 h-16 md:w-28 md:h-28">
-                  <Image src={social.icon + ".png"} alt={social.icon} width={43} height={43} className="md:w-24 w-14 h-14 m-2 md:h-24 rounded-full hover:shadow-2xl shadow-teal-300"/>
+                  <img src={"."+social.icon + ".png"} alt={social.icon} width={43} height={43} className="md:w-24 w-14 h-14 m-2 md:h-24 rounded-full hover:shadow-2xl shadow-teal-300"/>
                 </a>
                 <a href={social.url} target="_blank" className="sm:hidden grid rounded-3xl w-16 h-16 ">
-                  <Image src={social.icon + ".png"} alt={social.icon} width={30} height={30} className="w-11 h-11 m-2 rounded-full hover:shadow-2xl shadow-teal-300"/>
+                  <img src={"."+social.icon + ".png"} alt={social.icon} width={30} height={30} className="w-11 h-11 m-2 rounded-full hover:shadow-2xl shadow-teal-300"/>
                 </a>
               </div>
             ))
@@ -117,10 +116,10 @@ const Profile = () => {
             web3.map((social, i) => (
               <div className="flex animate-pulse hover:animate-bounce hover:p-3 w-full" key={i}>
                 <a href={social.url} target="_blank" className="sm:flex hidden rounded-full w-16 h-16 md:w-28 md:h-28">
-                  <Image src={social.icon + ".png"} alt={social.icon} width={43} height={43} className="md:w-24 w-14 h-14 my-3  md:h-24  rounded-full hover:shadow-2xl shadow-teal-300"/>
+                  <img src={"." + social.icon + ".png"} alt={social.icon} width={43} height={43} className="md:w-24 w-14 h-14 my-3  md:h-24  rounded-full hover:shadow-2xl shadow-teal-300"/>
                 </a>
                 <a href={social.url} target="_blank" className="sm:hidden  rounded-full w-16 h-16 ">
-                  <Image src={social.icon + ".png"} alt={social.icon} width={30} height={30} className="w-14 h-14 my-4 rounded-full hover:shadow-2xl hover:shadow-teal-300"/>
+                  <img src={"." + social.icon + ".png"} alt={social.icon} width={30} height={30} className="w-14 h-14 my-4 rounded-full hover:shadow-2xl hover:shadow-teal-300"/>
                 </a>
               </div>
             ))

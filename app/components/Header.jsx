@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Menu, Cross } from "@web3uikit/icons";
 import Link from "next/link";
@@ -143,11 +142,11 @@ const Header = () => {
             key={i}
             className="flex flex-col items-center py-1 px-3 md:px-6 hover:shadow-2xl"
           >
-            <Image
-              src={list.icon}
+            <img
+              src={"." + list.icon}
               width={36}
               height={36}
-              className="w-auto h-auto "
+              className=" "
               style={{
                 backgroundBlendMode: "color-burn",
               }}
@@ -181,11 +180,11 @@ const Header = () => {
               key={i}
               className="flex items-center px-1 py-1 m-3 rounded-full bg-green-300 dark:bg-green-600 w-fit "
             >
-              <Image
-                src={list.icon}
+              <img
+                src={"." + list.icon}
                 width={20}
                 height={16}
-                className="w-auto h-auto"
+                className=""
                 alt={list.title}
               />
               <li className="text-black dark:text-white">{list.title}</li>
@@ -199,15 +198,15 @@ const Header = () => {
           target="_blank"
           className="sm:right-24 sm:top-1 top-1 right-16 absolute text-black font-bold sm:text-xl text-sm dark:text-white flex flex-col items-center hover:shadow-inner"
         >
-          <Image
-            src="/resume.png"
+          <img
+            src="./resume.png"
             height={33}
             width={40}
             alt="resume"
             className="sm:hidden"
           />
-          <Image
-            src="/resume.png"
+          <img
+            src="./resume.png"
             height={46}
             width={49}
             alt="resume"
@@ -223,17 +222,17 @@ const Header = () => {
     sm:hover:p-1 sm:right-3 sm:top-2 sm:w-16 sm:h-16 hover:shadow-2xl"
       >
         {darkMode ? (
-          <Image
+          <img
             alt="light"
-            src="/light-bulb-off.png"
+            src="./light-bulb-off.png"
             width={63}
             height={63}
             className="p-3 animate-pulse"
           />
         ) : (
-          <Image
+          <img
             alt="light"
-            src="/light-bulb-on.png"
+            src="./light-bulb-on.png"
             width={63}
             height={63}
             className="p-3 animate-pulse"

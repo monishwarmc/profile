@@ -93,7 +93,7 @@ const Projects = () => {
             >{project.title}</h2>
             <img
             className="sm:p-6 p-3"
-            src={project.image}
+            src={"." + project.image}
             />
             <p
             className="sm:p-6 p-3 sm:text-lg text-md text-violet-200 dark:text-violet-600"
@@ -105,7 +105,7 @@ const Projects = () => {
                     className="px-3 py-1 animate-pulse"
                     >
                       <img
-                      src={t + ".png"}
+                      src={"." + t + ".png"}
                       className="p-1 w-12 h-12 rounded-2xl hover:m-1 hover:p-2"
                       />
                     </a>

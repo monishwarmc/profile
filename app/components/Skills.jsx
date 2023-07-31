@@ -125,13 +125,13 @@ const Skills = () => {
                 hasLockIcon
                 id='accordion'
                 tagText={<div className='flex'>
-                { skill.companyLogo && <img src={skill.companyLogo} className='rounded-full sm:w-9 sm:h-9 w-6 h-6 sm:m-1 '/>}
+                { skill.companyLogo && <img src={"." + skill.companyLogo} className='rounded-full sm:w-9 sm:h-9 w-6 h-6 sm:m-1 '/>}
                 <h2 className='text-black sm:text-xl text-md text-sm px-1'>{skill.company}</h2>
                 </div>}
                 theme="green"
                 subTitle={"level ~ "+skill.level +"%"}
                 title={<div className='flex'>
-                  <img src={skill.img} className='rounded-full w-6 h-6 '/>
+                  <img src={"." + skill.img} className='rounded-full w-6 h-6 '/>
                   <h2 className='text-zinc-900 sm:text-xl  font-bold md:px-3'>{skill.name}</h2>
                   </div>}
                 className='w-accord-s m-3'
@@ -156,7 +156,7 @@ const Skills = () => {
                 { skill.link && <a href={skill.link} target='_blank' className='animate-pulse hover:animate-none flex flex-col items-center'>
                 <img
                 className='rounded-2xl hover:p-3 px-1 pb-6'
-                src={skill.certificate}
+                src={"." + skill.certificate}
                 />
                 </a>}
                 </section>
