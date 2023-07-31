@@ -13,11 +13,11 @@ cd profile
 ```bash
 npm run dev
 ```
-## or
+### or
 ```bash
 yarn dev
 ```
-## or
+### or
 ```bash
 pnpm dev
 ```
