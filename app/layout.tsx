@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel='icon' href='/me.png'/>
+        <meta property="og:image" content="<img src='./me.png'/>" />
         
       </head>
       <body className={inter.className}>
