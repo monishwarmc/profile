@@ -1,6 +1,6 @@
 My Portfolio webPage
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
@@ -13,15 +13,15 @@ cd profile
 ```bash
 npm run dev
 ```
-# or
+## or
 ```bash
 yarn dev
 ```
-# or
+## or
 ```bash
 pnpm dev
 ```
 
-## Deployed
+# Deployed
 
   [monishwar.social](https://monishwar.social/)
