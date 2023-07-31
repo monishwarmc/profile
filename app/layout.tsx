@@ -25,7 +25,7 @@ export default function RootLayout({
         <meta property="og:title" content="Monishwar M C"/>
         <meta property="og:description" content="web3 enthusiast"/>
         <meta property="og:image" content="./me.png"/>
-        <meta property="og:url" content="monishwar.social"/>
+        <meta property="og:url" content="https://monishwar.social"/>
               
       </head>
       <body className={inter.className}>
