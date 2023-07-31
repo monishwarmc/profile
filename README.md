@@ -9,7 +9,7 @@ git clone https://github.com/monishwarmc/profile.git
 cd profile
 ```
 
-##then run
+## then run
 ```bash
 npm run dev
 ```
