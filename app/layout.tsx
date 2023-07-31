@@ -20,8 +20,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel='icon' href='/me.png'/>
-        <meta property="og:image" content="<img src='./me.png'/>" />
         
+        
+        <meta property="og:title" content="Monishwar M C"/>
+        <meta property="og:description" content="web3 enthusiast"/>
+        <meta property="og:image" content="./me.png"/>
+        <meta property="og:url" content="monishwar.social"/>
+              
       </head>
       <body className={inter.className}>
 
