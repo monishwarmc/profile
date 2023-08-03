@@ -26,9 +26,8 @@ body {
     rgb(var(--background-start-rgb));
 
 }
-
-mm{
-  color: #39c9e2a9;
+.shade {
+  filter: drop-shadow(6px 6px 9px skyblue);
 }
 
 @keyframes pulsee {
