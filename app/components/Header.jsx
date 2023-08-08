@@ -166,7 +166,7 @@ const Header = () => {
       ) : (
         <a className="sm:hidden" onClick={handleTog} >
           <div className="px-3 py-4">
-            <Cross className="w-6 h-6" />
+            <Cross className="w-6 h-6 rounded-3xl" />
           </div>
         </a>
       )}
