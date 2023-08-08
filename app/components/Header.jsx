@@ -160,7 +160,7 @@ const Header = () => {
       {!toggle ? (
         <a className="sm:hidden" onClick={handleTog} >
           <div className="px-3 py-4">
-            <Menu className="w-6 h-6" />
+            <Menu className="w-6 h-6 rounded-3xl" />
           </div>
         </a>
       ) : (
