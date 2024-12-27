@@ -24,4 +24,4 @@ pnpm dev
 
 # Deployed
 
-  [monishwar.social](https://monishwar.social/)
+  (https://profile-zeta-one.vercel.app)
