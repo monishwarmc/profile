@@ -24,4 +24,4 @@ pnpm dev
 
 # Deployed
 
-  (https://profile-zeta-one.vercel.app)
+  https://profile-zeta-one.vercel.app
