@@ -70,7 +70,7 @@ const Profile = () => {
         <h2
         className="sm:text-5xl text-2xl font-bold sm:py-6 py-3 flex"
         >Working @ <a href="https://www.jsw.in/" target="_blank" className="sm:hover:text-6xl sm:text-5xl hover:text-3xl text-2xl hover:no-underline underline flex sm:pl-3 pl-1 animate-pulse">
-            <img alt="JSW" src='./skcet.png' width={43} height={39} className="rounded-full mx-1 my-1 w-9 h-9 sm:w-11 sm:h-11"/>
+            <img alt="JSW" src='./jsw.png' width={43} height={39} className="rounded-full mx-1 my-1 w-9 h-9 sm:w-11 sm:h-11"/>
             JSW steel</a></h2>
         <h3
         className="sm:text-4xl text-xl sm:py-3 py-1"
