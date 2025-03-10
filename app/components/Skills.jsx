@@ -153,7 +153,7 @@ const Skills = () => {
                   step={1}
                   value={skill.level}
                 />
-                { skill.link && <a href={skill.link} target='_blank' className='animate-pulse hover:animate-none flex flex-col items-center'>
+                { skill.link && <a href={skill.link} target='_blank' className='animate-none hover:animate-pulse flex flex-col items-center'>
                 <img
                 className='rounded-2xl hover:p-3 px-1 pb-6 sm:w-116 w-96'
                 src={"." + skill.certificate}
