@@ -24,4 +24,4 @@ pnpm dev
 
 # Deployed
 
-  https://profile-zeta-one.vercel.app
+  [monishwar-m-c.vercel.app](https://monishwar-m-c.vercel.app/)
